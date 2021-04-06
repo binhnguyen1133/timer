@@ -6,12 +6,30 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  /* position: relative; */
   background-color: #031123;
 }
 
+.text{
+  position: fixed;
+  top: 50px;
+  color: #fff;
+  font-size: 60px;
+  text-shadow: 4px 4px rgba(255, 255, 255, 0.3);
+}
+
+.all-time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 50vh;
+  width: 100%;
+}
+
 .calendar-card {
-  position: absolute;
+  /* position: absolute; */
   width: 230px;
 }
 
@@ -63,4 +81,31 @@ body {
   text-align: center;
   font-size: 0.8em;
   line-height: 1em;
+}
+
+.time-now {
+  margin-top: 200px;
+  height: 230px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: space-between;
+}
+
+.time-now .block-time {
+  height: 230px;
+  width: 230px;
+  margin: 40px;
+  background-color: #000;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-bottom: 6px solid #4285f4 !important;
+  box-shadow: 0px 0px 25px rgba(1, 1, 1, 0.15);
+  color: #fff;
+  text-align: center;
+  font-size: 10em;
+  line-height: 230px;
+  font-weight: bold;
 }
