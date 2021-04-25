@@ -10,7 +10,7 @@ body {
   background-color: #031123;
 }
 
-.text{
+.text {
   position: fixed;
   top: 50px;
   color: #fff;
@@ -110,8 +110,7 @@ body {
   font-weight: bold;
 }
 
-
-.sth{
+.sth {
   color: #fff;
   font-weight: bold;
   font-size: 10em;

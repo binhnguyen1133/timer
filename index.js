@@ -14,18 +14,18 @@ const months = [
 ];
 
 const day = [
+  "Sunday",
   "Monday",
   "Tuesday",
   "Wednesday",
   "Thursday",
   "Friday",
   "Saturday",
-  "Sunday",
 ];
 
 var date = new Date();
 const month = months[date.getMonth()];
-const dayName = day[date.getDay() - 1];
+const dayName = day[date.getDay()];
 const dayNum = date.getDate();
 const year = date.getFullYear();
 
@@ -47,12 +47,15 @@ function time() {
   var minute = document.getElementsByClassName("minute")[0];
   var second = document.getElementsByClassName("second")[0];
   var h = d.getHours();
+  h = ("0" + h).slice(-2);
   var m = d.getMinutes();
+  m = ("0" + m).slice(-2);
   var s = d.getSeconds();
+  s = ("0" + s).slice(-2);
 
   hour.innerHTML = h;
   minute.innerHTML = m;
   second.innerHTML = s;
 }
 
-var interval = setInterval(time,1000);
+var interval = setInterval(time, 1000);
